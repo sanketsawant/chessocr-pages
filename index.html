@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ChessOCR - Chess Position Recognition</title>
+    <title>ChessOCR - Chess Recognition & PGN Conversion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -23,16 +23,20 @@
 
     <section id="hero">
         <div class="container">
-            <h2>Chess Position Recognition Using Computer Vision</h2>
-            <p>An open-source tool to convert chess board images to FEN notation</p>
+            <h2>Chess Recognition & PGN Conversion Tool</h2>
+            <p>Convert both chess board images and handwritten moves to PGN format for game analysis</p>
         </div>
     </section>
 
     <section id="about">
         <div class="container">
             <h2>About the Project</h2>
-            <p>ChessOCR is a computer vision project that recognizes chess positions from images and converts them to FEN (Forsyth-Edwards Notation), allowing for easy analysis and sharing of chess positions.</p>
-            <p>Whether you're analyzing a position from a book, screenshot, or photo of a physical board, ChessOCR aims to make the process seamless.</p>
+            <p>ChessOCR is a comprehensive chess digitization tool with dual functionality:</p>
+            <ol>
+                <li>Recognizes chess positions from images and converts them to standard notation</li>
+                <li>Scans handwritten chess moves from scoresheets and converts them to PGN format</li>
+            </ol>
+            <p>This tool aims to bridge the gap between physical chess (boards and scoresheets) and digital analysis, allowing players to easily digitize their games for further study and improvement.</p>
         </div>
     </section>
 
@@ -40,12 +44,13 @@
         <div class="container">
             <h2>Project Goals</h2>
             <ul>
-                <li>Accurately detect chess boards in various images</li>
-                <li>Identify pieces regardless of the board style or angle</li>
-                <li>Convert detected positions to standard FEN notation</li>
-                <li>Provide an easy-to-use interface for chess players</li>
-                <li>Support both web and mobile platforms</li>
-                <li>Maintain high accuracy across different lighting conditions</li>
+                <li>Scan chess board images and convert positions to standard notation</li>
+                <li>Recognize handwritten moves from player scoresheets</li>
+                <li>Convert both board positions and move sequences to PGN format</li>
+                <li>Enable players to easily digitize their physical games for analysis</li>
+                <li>Support various image sources (photos, scans, screenshots)</li>
+                <li>Maintain high accuracy across different handwriting styles</li>
+                <li>Provide a seamless workflow from image scanning to analysis-ready PGN</li>
             </ul>
         </div>
     </section>
@@ -55,20 +60,44 @@
             <h2>Features</h2>
             <div class="feature-grid">
                 <div class="feature">
-                    <h3>Board Detection</h3>
-                    <p>Automatically locates and extracts the chess board from images</p>
+                    <h3>Board Position Recognition</h3>
+                    <p>Automatically detects and identifies chess positions from board images</p>
                 </div>
                 <div class="feature">
-                    <h3>Piece Recognition</h3>
-                    <p>Identifies chess pieces using machine learning algorithms</p>
+                    <h3>Handwritten Move Recognition</h3>
+                    <p>Scans and interprets chess notation written by players on scoresheets</p>
                 </div>
                 <div class="feature">
-                    <h3>FEN Notation</h3>
-                    <p>Converts the visual position to standard chess notation</p>
+                    <h3>PGN Conversion</h3>
+                    <p>Generates standard PGN files compatible with all chess analysis software</p>
                 </div>
                 <div class="feature">
-                    <h3>Position Validation</h3>
-                    <p>Checks if the detected position is legal according to chess rules</p>
+                    <h3>Error Detection</h3>
+                    <p>Identifies potential errors in move sequences and position legality</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="use-cases">
+        <div class="container">
+            <h2>Use Cases</h2>
+            <div class="use-case-grid">
+                <div class="use-case">
+                    <h3>Tournament Players</h3>
+                    <p>Quickly digitize handwritten scoresheets after tournament games for immediate analysis</p>
+                </div>
+                <div class="use-case">
+                    <h3>Chess Coaches</h3>
+                    <p>Convert student games and problem positions to digital format for teaching purposes</p>
+                </div>
+                <div class="use-case">
+                    <h3>Book Readers</h3>
+                    <p>Scan positions from chess books to analyze with modern engines</p>
+                </div>
+                <div class="use-case">
+                    <h3>Game Archivists</h3>
+                    <p>Digitize historical scoresheets and board positions for preservation and study</p>
                 </div>
             </div>
         </div>
@@ -76,7 +105,8 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 ChessOCR - Created by <a href="https://github.com/sanketsawant">Sanket Sawant</a></p>
+            <p>&copy; 2025 ChessOCR - Developed by <a href="https://github.com/sanketsawant">sanketsawant</a></p>
+            <p class="last-updated">Last updated: 2025-03-31</p>
         </div>
     </footer>
 </body>
